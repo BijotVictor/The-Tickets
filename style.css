@@ -110,7 +110,6 @@ section .events ul li .details a{
     display: inline-block;
     text-decoration: none;
     padding: 10px 15px;
-    border: 2px solid rgb(64, 132, 219);
     margin-top: 3%;
     font-size: 18px;
     transition: .5s;
@@ -119,4 +118,30 @@ section .events ul li .details a:hovet{
     background: #e91e63;
     color: #fff;
     border-color: #e91e63;
+}
+#NavCenter {
+    padding-right: 700px;
+}
+nav .nav-link {
+    color: white;
+}
+#buttonCTA {
+    position: relative;
+    margin-left: 840PX;
+    background-color: red;
+    color: white;
+    padding: 32px 16px;
+    border-radius: 8px;
+}
+#login {
+    background-color: #e7e7e7;
+    color: black;
+    border-radius: 8px;
+}
+#restantes{
+    position:relative;
+    padding-right : 10px;
+    padding-top: 20px;
+    float: right;
+    font-weight: bold;
 }

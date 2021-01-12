@@ -9,9 +9,18 @@
         <title>The Tickets</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body><a class="navbar-brand " href="# ">             
-            <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de MarxCooking  ">         
-                </a>
+    <body><nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand " href="# ">
+            <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de MarxCooking  ">
+        </a>
+        <ul class="nav justify-content-center">
+            <li class="nav-item" id="NavCenter">
+                <a class="nav-link active" href="index.html" id="Home">ACCUEIL</a>
+            </li>
+            <a href="signup.html"> <button id="login"> S'inscrire </button ></a>
+            <a href="login.html"><button id="login"> Se connecter </button></a>
+        </ul>
+    </nav>
         <section>
             <div class="leftBox">
             <div class="content">
@@ -32,7 +41,9 @@
                             <h3>Vald en concert!!</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!</p>
-                            <a href="#">Voir les details</a>
+                            <p class="text-capitalize" id="restantes">Place restantes : 12</p>
+                            <a href="paiement.html"><button type="button" class="btn btn-outline-primary">Payer</button></a>
+                            <input type="text" placeholder="nombre de place..." aria-label="nombre de place">
                         </div>
                         <div style="clear: both;"></div>
                     </li>
@@ -43,8 +54,11 @@
                         <div class="details">
                             <h3>Freeze Corleone en concert!!</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                               Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!</p>
-                            <a href="#">Voir les details</a>
+                               Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!
+                        </p>    
+                            <p class="text-capitalize" id="restantes">Place restantes : 17</p>
+                            <a href="paiement.html"><button type="button" class="btn btn-outline-primary">Payer</button></a>
+                            <input type="text" placeholder="nombre de place..." aria-label=".nombre de place">
                         </div>
                         <div style="clear: both;"></div>
                     </li>
@@ -56,7 +70,9 @@
                             <h3>Lyonzon en concert!!</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!</p>
-                            <a href="#">Voir les details</a>
+                               <p class="text-capitalize" id="restantes">Place restantes : 7</p>
+                               <a href="paiement.html"><button type="button" class="btn btn-outline-primary">Payer</button></a>
+                               <input type="text" placeholder="nombre de place..." aria-label="nombre de place">
                         </div>
                         <div style="clear: both;"></div>
                     </li>
