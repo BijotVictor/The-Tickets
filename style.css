@@ -1,50 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Slab', serif;
 }
-section{
+
+section {
     width: 100%;
     height: 100vh;
     background-size: cover;
     background: url(concert_evenement.jpg);
 }
-section .leftBox{
+
+section .leftBox {
     width: 50%;
     height: 100%;
     float: left;
     padding: 50px;
+    padding-top: 200px;
     box-sizing: border-box;
 }
-section .leftBox .content{
+
+section .leftBox .content {
     color: rgb(255, 255, 255);
     background: rgb(64, 132, 219);
     padding: 40px;
     transition: .5s;
 }
-section .leftBox .content:hover{
+
+section .leftBox .content:hover {
     background: #1947ac;
 }
-section .leftBox .content h1{
+
+section .leftBox .content h1 {
     margin: 0;
     padding: 0;
     font-size: 50px;
     text-transform: uppercase;
 }
-section .leftBox .content p{
+
+section .leftBox .content p {
     margin: 10px 0 0;
     padding: 0;
 }
-section .events{
+
+section .events {
     position: relative;
     width: 50%;
     height: 100%;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     float: right;
     box-sizing: border-box;
 }
-section .events ul{
+
+section .events ul {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -52,14 +61,16 @@ section .events ul{
     padding: 40px;
     box-sizing: border-box;
 }
-section .events ul li{
+
+section .events ul li {
     list-style: none;
     background: #fff;
     box-sizing: border-box;
     height: 200px;
     /*margin: 15px 0;*/
 }
-section .events ul li .time{
+
+section .events ul li .time {
     position: relative;
     padding: 20px;
     background: rgb(64, 132, 219);
@@ -70,23 +81,27 @@ section .events ul li .time{
     text-align: center;
     transition: .5s;
 }
-section .events ul li:hover .time{
+
+section .events ul li:hover .time {
     background: #1947ac;
 }
-section .events ul il .time h2{
+
+section .events ul il .time h2 {
     position: absolute;
     margin: 0;
     padding: 0%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: #fff;
     font-size: 60px;
 }
-section .events ul li .time h2 span{
+
+section .events ul li .time h2 span {
     font-size: 30px;
 }
-section .events ul li .details{
+
+section .events ul li .details {
     padding: 20px;
     background: #fff;
     box-sizing: border-box;
@@ -94,19 +109,22 @@ section .events ul li .details{
     height: 100%;
     float: left;
 }
-section .events ul li .details h3{
+
+section .events ul li .details h3 {
     position: relative;
     margin: 0%;
     padding: 0%;
     font-size: 22px;
 }
-section .events ul li .details p{
+
+section .events ul li .details p {
     position: relative;
     margin: 10px 0 0;
     padding: 0%;
     font-size: 16px;
 }
-section .events ul li .details a{
+
+section .events ul li .details a {
     display: inline-block;
     text-decoration: none;
     padding: 10px 15px;
@@ -114,17 +132,21 @@ section .events ul li .details a{
     font-size: 18px;
     transition: .5s;
 }
-section .events ul li .details a:hovet{
+
+section .events ul li .details a:hovet {
     background: #e91e63;
     color: #fff;
     border-color: #e91e63;
 }
+
 #NavCenter {
     padding-right: 700px;
 }
+
 nav .nav-link {
     color: white;
 }
+
 #buttonCTA {
     position: relative;
     margin-left: 840PX;
@@ -133,76 +155,76 @@ nav .nav-link {
     padding: 32px 16px;
     border-radius: 8px;
 }
+
 #login {
     background-color: #e7e7e7;
     color: black;
     border-radius: 8px;
 }
-#restantes{
-    position:relative;
-    padding-right : 10px;
+
+#restantes {
+    position: relative;
+    padding-right: 10px;
     padding-top: 20px;
     float: right;
     font-weight: bold;
 }
 
-
-@media (min-width: 480px) and (max-width: 780px){   
-section{
-    height: 100%;
-    width: 100%;
-    background-position: center;
-}
-section.leftBox{
-    width: 100%;
-    height: auto;
-    float: none;
-    padding: 20px;
-}
-section .events{
-    width: 100px;
-    height: auto;
-    background: transparent;
-    float: none;
-}
-section .leftBox .content{
-    padding: 20px;
-}
-section .leftBox .content h1{
-    font-size: 30px;
-}
-section .events ul{
-    position: relative;
-    transform: translateY(0px);
-    padding: 0 20px 20px;
-}
-section .events ul li{
-    height: auto;
-    background: rgba(255,255,255,.09);
-}
-section .events ul li .time{
-    width: 80px;
-    height: 80px;
-    padding: 0;
-}
-section .events ul li .time h2{
-    font-size: 30px;
-    line-height: 24px;
-}
-section .events il li .time h2 span{
-    font-size: 20px;
-}
-section .events ul li .details{
-    width: 100%;
-    float: none;
-    padding-left: 100px;
-    background: transparent;
-}
-section .events ul li .details a{
-    padding: 5px 10px;
-}
-nav{
-    width: 100%;
-    
-}
+@media (min-width: 480px) and (max-width: 780px) {
+    section {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+    }
+    section.leftBox {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+    section .events {
+        width: 100px;
+        height: auto;
+        background: transparent;
+        float: none;
+    }
+    section .leftBox .content {
+        padding: 20px;
+    }
+    section .leftBox .content h1 {
+        font-size: 30px;
+    }
+    section .events ul {
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    section .events ul li {
+        height: auto;
+        background: rgba(255, 255, 255, .09);
+    }
+    section .events ul li .time {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+    section .events ul li .time h2 {
+        font-size: 30px;
+        line-height: 24px;
+    }
+    section .events il li .time h2 span {
+        font-size: 20px;
+    }
+    section .events ul li .details {
+        width: 100%;
+        float: none;
+        padding-left: 100px;
+        background: transparent;
+    }
+    section .events ul li .details a {
+        padding: 5px 10px;
+    }
+    nav {
+        width: 100%;
+    }
 }
