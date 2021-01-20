@@ -13,18 +13,18 @@
 
 <body>
     <nav class="navbar navbar-dark bg-dark position fixed-top">
-        <a class="navbar-brand " href="# ">
+        <a class="navbar-brand " href="index.php">
             <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de The Tickets  ">
         </a>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" href="index.html" id="Home">ACCUEIL</a>
+                <a class="nav-link active" href="index.php" id="Home">ACCUEIL</a>
             </li>
             <li class="nav-item" id="NavCenter">
-                <a class="nav-link" href="cree.html" id="Home">CREER VOTRE EVENEMENT</a>
+                <a class="nav-link" href="cree.php" id="Home">CREER VOTRE EVENEMENT</a>
             </li>
-            <a href="signup.html"> <button id="login"> S'inscrire </button ></a>
-            <a href="login.html"><button id="login"> Se connecter </button></a>
+            <a href="signup.php"> <button id="login"> S'inscrire </button ></a>
+            <a href="login.php"><button id="login"> Se connecter </button></a>
         </ul>
     </nav>
     <section>
@@ -46,7 +46,7 @@
                         <h3>Vald en concert!!</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!</p>
                         <p class="text-capitalize" id="restantes">Place restantes : 12</p>
-                        <a href="Vald.html"><button type="button" class="btn btn-outline-primary">Plus D'info</button></a>
+                        <a href="Vald.php"><button type="button" class="btn btn-outline-primary">Plus D'info</button></a>
                     </div>
                     <div style="clear: both;"></div>
                 </li>
@@ -59,7 +59,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!
                         </p>
                         <p class="text-capitalize" id="restantes">Place restantes : 17</p>
-                        <a href="freeze.html"><button type="button" class="btn btn-outline-primary">Plus D'info</button></a>
+                        <a href="freeze.php"><button type="button" class="btn btn-outline-primary">Plus D'info</button></a>
                     </div>
                     <div style="clear: both;"></div>
                 </li>
@@ -71,7 +71,7 @@
                         <h3>Lyonzon en concert!!</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!</p>
                         <p class="text-capitalize" id="restantes">Place restantes : 7</p>
-                        <a href="lyonzon.html"><button type="button" class="btn btn-outline-primary">Plus D'info</button></a>
+                        <a href="lyonzon.php"><button type="button" class="btn btn-outline-primary">Plus D'info</button></a>
                     </div>
                     <div style="clear: both;"></div>
                 </li>

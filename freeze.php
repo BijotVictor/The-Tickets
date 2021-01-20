@@ -14,30 +14,30 @@
 
 <body>
     <nav class="navbar navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand " href="# ">
+        <a class="navbar-brand " href="index.php">
             <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de The Tickets  ">
         </a>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" href="index.html" id="Home">ACCUEIL</a>
+                <a class="nav-link active" href="index.php" id="Home">ACCUEIL</a>
             </li>
             <li class="nav-item" id="NavCenter">
-                <a class="nav-link" href="cree.html" id="Home">CREE VOTRE EVENEMENT</a>
+                <a class="nav-link" href="cree.php" id="Home">CREE VOTRE EVENEMENT</a>
             </li>
-            <a href="signup.html"> <button id="login"> S'inscrire </button ></a>
-            <a href="login.html"><button id="login"> Se connecter </button></a>
+            <a href="signup.php"> <button id="login"> S'inscrire </button ></a>
+            <a href="login.php"><button id="login"> Se connecter </button></a>
         </ul>
     </nav>
     <div>
         <div class="card mb-3" style="max-width: 100%;max-height: 100%;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img id="vald" src="image_lyonzon.jpg" alt="image de Lyonzon">
+                    <img id="vald" src="image_freeze.jpg" alt="image de freeze Corleone">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
 
-                        <h3 class="card-title mx-auto">Lyonzon en concert à l'Accord Hotel Arena !</h3>
+                        <h3 class="card-title mx-auto">Freeze Corleone en concert à l'Accord Hotel Arena !</h3>
                         <br><br>
                         <p class="card-text">parle de l'album .</p>
                         <p class="card-text">Tlead-in to additional content. This content is a little bit longer.</p>
@@ -45,7 +45,7 @@
                         <br><br>
                         <p class="card-text">Date de l'événement : 2 février 2021 à 20h30.</p>
                         <p class="card-text"><small class="text-muted">Posté le 15/01/2021</small></p>
-                        <a class="btn btn-danger" href="Reservation.html" role="button">Reserver Maintenant !</a>
+                        <a class="btn btn-danger" href="Reservation.php" role="button">Reserver Maintenant !</a>
                     </div>
                 </div>
             </div>

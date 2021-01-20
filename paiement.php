@@ -14,17 +14,19 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-dark position fixed-top">
         <a class="navbar-brand " href="# ">
             <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de The Tickets  ">
         </a>
         <ul class="nav justify-content-center">
-            <li class="nav-item" id="NavCenter">
-                <a class="nav-link active" href="index.html">ACCUEIL</a>
+            <li class="nav-item">
+                <a class="nav-link active" href="index.php" id="Home">ACCUEIL</a>
             </li>
-            <a href="signup.html">
-                <button id="login"> S'inscrire </button></a>
-            <a href="login.html"><button id="login"> Se connecter </button></a>
+            <li class="nav-item" id="NavCenter">
+                <a class="nav-link" href="cree.php" id="Home">CREER VOTRE EVENEMENT</a>
+            </li>
+            <a href="signup.php"> <button id="login"> S'inscrire </button ></a>
+            <a href="login.php"><button id="login"> Se connecter </button></a>
         </ul>
     </nav>
     <form class="credit-card">

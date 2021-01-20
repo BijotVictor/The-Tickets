@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -6,51 +6,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>The Tickets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="style4.css">
+    <title>The Tickets</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-dark bg-dark position fixed-top">
         <a class="navbar-brand " href="# ">
             <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de The Tickets  ">
         </a>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" href="index.html" id="Home">ACCUEIL</a>
+                <a class="nav-link active" href="index.php" id="Home">ACCUEIL</a>
             </li>
             <li class="nav-item" id="NavCenter">
-                <a class="nav-link" href="cree.html" id="Home">CREE VOTRE EVENEMENT</a>
+                <a class="nav-link" href="cree.php" id="Home">CREER VOTRE EVENEMENT</a>
             </li>
-            <a href="signup.html"> <button id="login"> S'inscrire </button ></a>
-            <a href="login.html"><button id="login"> Se connecter </button></a>
+            <a href="signup.php"> <button id="login"> S'inscrire </button ></a>
+            <a href="login.php"><button id="login"> Se connecter </button></a>
         </ul>
     </nav>
-    <div>
-        <div class="card mb-3" style="max-width: 100%;max-height: 100%;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img id="vald" src="image_freeze.jpg" alt="image de freeze Corleone">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-
-                        <h3 class="card-title mx-auto">Freeze Corleone en concert à l'Accord Hotel Arena !</h3>
-                        <br><br>
-                        <p class="card-text">parle de l'album .</p>
-                        <p class="card-text">Tlead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Tlead-in to additional content. This content is a little bit longer.</p>
-                        <br><br>
-                        <p class="card-text">Date de l'événement : 2 février 2021 à 20h30.</p>
-                        <p class="card-text"><small class="text-muted">Posté le 15/01/2021</small></p>
-                        <a class="btn btn-danger" href="Reservation.html" role="button">Reserver Maintenant !</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <br><br><br><br>
+    <div id="fond1" class="w-50 p-3">
+        <!-- Content here -->
+        <img src="connexion_inscription.jpg" width="100% " height="100% " alt="image de connexion_inscription " style="float: left" ;>
     </div>
+    <div style="text-align: center;">
+        <br><br><br><br><br><br>
+        <h4 id="Left" id="black">Inscrivez vous gratuitement </h4>
+        <form id="black">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Address Mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Mot de passe</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">S'inscr   ire</button>
+        </form>
+    </div>
+
     <footer class="position fixed-bottom container py-3 bg-light">
         <div class="row">
             <div class="col-12 col-md">
@@ -76,7 +75,7 @@
                 <br>
                 <h5>DEV</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Victor Bijot</a></li>
+                    <li><a class="text-muted" href="https://github.com/BijotVictor">Victor Bijot</a></li>
                 </ul>
             </div>
         </div>
