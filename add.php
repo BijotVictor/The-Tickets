@@ -5,9 +5,9 @@ session_start();
 if($_POST){
     if(isset($_POST['inputEmail4']) && !empty($_POST['inputEmail4'])
     && isset($_POST['inputPassword4']) && !empty($_POST['inputPassword4'])
-    && isset($_POST['inputAddress']) && !empty($_POST['inputAddress'])){
-    && isset($_POST['inputCity']) && !empty($_POST['inputCity'])){
-    && isset($_POST['inputState']) && !empty($_POST['inputState'])){
+    && isset($_POST['inputAddress']) && !empty($_POST['inputAddress'])
+    && isset($_POST['inputCity']) && !empty($_POST['inputCity'])
+    && isset($_POST['inputState']) && !empty($_POST['inputState'])
     && isset($_POST['inputZip']) && !empty($_POST['inputZip'])){
         // On inclut la connexion à la base
         require_once('connect.php');
