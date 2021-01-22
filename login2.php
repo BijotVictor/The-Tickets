@@ -1,32 +1,27 @@
 <?php
+	session_start();
 	@$login=$_POST["login"];
 	@$pass=$_POST["pass"];
-	@$repass=$_POST["repass"];
 	@$valider=$_POST["valider"];
 	$message="";
 	if(isset($valider)){
-		if(empty($login)) $message.="<li>Login invalide!</li>";
-		if(empty($pass)) $message.="<li>Mot de passe invalide!</li>";
-		if($pass!=$repass) $message.="<li>Mots de passe non identiques!</li>";	
-		if(empty($message)){
-			include("connexion.php");
-			$req=$pdo->prepare("select id from users where login=? limit 1");
-			$req->setFetchMode(PDO::FETCH_ASSOC);
-			$req->execute(array($login));
-			$tab=$req->fetchAll();
-			if(count($tab)>0)
-				$message="<li>Login existe déjà!</li>";
-			else{
-				$ins=$pdo->prepare("insert into users(date,login,pass) values(now(),?,?)");
-				$ins->execute(array($login,md5($pass)));
-				header("location:login.php");
-			}
+		include("connexion.php");
+		$res=$pdo->prepare("select * from users where login=? and pass=? limit 1");
+		$res->setFetchMode(PDO::FETCH_ASSOC);
+		$res->execute(array($login,md5($pass)));
+		$tab=$res->fetchAll();
+		if(count($tab)==0)
+			$message="<li>Mauvais login ou mot de passe!</li>";
+		else{
+			$_SESSION["autoriser"]="oui";
+			$_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
+			header("location:session.php");
 		}
 	}
 ?>
 <!DOCYTPE html>
 <html>
-<head>
+	<head>
 	 <!-- Required meta tags -->
 	 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,24 +33,22 @@
     <title>The Tickets</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
-	<body>
+	
+	<body onLoad="document.fo.login.focus()">
 	<nav class="navbar navbar-dark bg-dark position ">
         <a class="navbar-brand " href="# ">
             <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de The Tickets  ">
         </a>
         
     </nav>
-    <h1 class="mx-auto">Veillez vous inscrire ou vous connecter</h1>
-		<form name="fo" method="post" action="" enctype="multipart/form-data">
+		<form name="fo" method="post" action="">
 			<div class="label">Login</div>
 			<input type="text" name="login" value="<?php echo $login?>" />
 			<div class="label">Mot de passe</div>
 			<input type="password" name="pass" />
-			<div class="label">Confirmation du mot de passe</div>
-			<input type="password" name="repass" />
-			<input type="submit" name="valider" value="S'inscrire" />
-            <input href="login2.php" type="submit" name="valider" value="Se connecter" />
+			<input type="submit" name="valider" value="S'authentifier" />
 		</form>
+		
 		<?php if(!empty($message)){ ?>
 		<div id="message"><?php echo $message ?></div>
 		<?php } ?>
@@ -90,4 +83,5 @@
         </div>
     </footer>
 	</body>
+	
 </html>
