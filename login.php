@@ -35,7 +35,7 @@
 	</head>
 	
 	<body onLoad="document.fo.login.focus()">
-	<nav class="navbar navbar-dark bg-dark position fixed-top">
+	<nav class="navbar navbar-dark bg-dark position ">
         <a class="navbar-brand " href="# ">
             <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de The Tickets  ">
         </a>

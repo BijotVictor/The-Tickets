@@ -18,7 +18,7 @@
 				$message="<li>Login existe déjà!</li>";
 			else{
 				$ins=$pdo->prepare("insert into users(date,login,pass) values(now(),?,?)");
-				$ins->execute(array(,$login,md5($pass)));
+				$ins->execute(array($login,md5($pass)));
 				header("location:login.php");
 			}
 		}
@@ -26,11 +26,20 @@
 ?>
 <!DOCYTPE html>
 <html>
-	<head>
+<head>
+	 <!-- Required meta tags -->
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="style4.css">
+    <title>The Tickets</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body>
-	<nav class="navbar navbar-dark bg-dark position fixed-top">
+	<nav class="navbar navbar-dark bg-dark position ">
         <a class="navbar-brand " href="# ">
             <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de The Tickets  ">
         </a>
