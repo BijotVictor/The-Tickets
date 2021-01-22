@@ -54,10 +54,8 @@
 			<div class="label">Confirmation du mot de passe</div>
 			<input type="password" name="repass" />
 			<input type="submit" name="valider" value="S'inscrire" />
-		</form>
-        <a href="login2.php">
-   <input type="button" value="Se connecter" />
-</a>
+		</form>  
+   <input href="login2.php" type="button" value="Se connecter" />
 		<?php if(!empty($message)){ ?>
 		<div id="message"><?php echo $message ?></div>
 		<?php } ?>
