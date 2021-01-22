@@ -17,7 +17,7 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <div class="inner">
             <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="index.php">ACCUEIL</a>
+                <a class="nav-link active" href="accueil.php">ACCUEIL</a>
             </nav>
         </div>
         <br><br><br><br><br><br><br><br>
