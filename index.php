@@ -50,12 +50,16 @@
 			<div class="label">Login</div>
 			<input type="text" name="login" value="<?php echo $login?>" />
 			<div class="label">Mot de passe</div>
-			<input type="password" name="pass" />
-			<div class="label">Confirmation du mot de passe</div>
-			<input type="password" name="repass" />
-			<input type="submit" name="valider" value="S'inscrire" />
+            <input type="password" name="pass" />
+            <div class="label">Confirmation du mot de passe</div>
+            <input type="password" name="repass" />
+            <input type="submit" name="valider" value="S'inscrire" />
+    
 		</form>  
-   <input href="login2.php" type="button" value="Se connecter" />
+        <form action="login2.php" >
+    <input type="submit" value="Se connecter" 
+       />
+</form>
 		<?php if(!empty($message)){ ?>
 		<div id="message"><?php echo $message ?></div>
 		<?php } ?>

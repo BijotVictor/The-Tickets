@@ -36,8 +36,8 @@ input{
 	display:block;
 }
 input[type="submit"]{
-	background-color:#E60;
-	border-color:#E60;
+	background-color:rgb(250, 184, 3);
+	border-color:rgb(194, 189, 185);
 	color:#FFF;
 }
 #message{
@@ -49,7 +49,7 @@ input[type="submit"]{
 }
 a{
 	padding:14px;
-	background-color:#E60;
+	background-color:rgb(204, 198, 194);
 	text-decoration:none;
 	color:#FFF;
 	vertical-align:middle;
@@ -57,7 +57,7 @@ a{
 	border-radius:6px;
 }
 a:hover{
-	background-color:#F80;
+	background-color:rgb(170, 168, 165);
 }
 h1{
 	font-size:36pt;
@@ -68,4 +68,9 @@ h1 span{
 	font:inherit;
 	color:#F80;
 
+}
+#jaune{
+	background-color:rgb(250, 184, 3);
+	border-color:rgb(194, 189, 185);
+	color:#FFF;
 }
