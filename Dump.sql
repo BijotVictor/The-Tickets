@@ -23,8 +23,6 @@ SET time_zone = "+00:00";
 CREATE TABLE `users` (
   `id` int(10) unsigned NOT NULL,
   `date` datetime NOT NULL,
-  `nom` varchar(40) NOT NULL,
-  `prenom` varchar(40) NOT NULL,
   `login` varchar(40) NOT NULL,
   `pass` varchar(40) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
@@ -33,8 +31,8 @@ CREATE TABLE `users` (
 -- Contenu de la table `users`
 --
 
-INSERT INTO `users` (`id`, `date`, `nom`, `prenom`, `login`, `pass`) VALUES
-(1, '2020-04-09 15:54:59', 'Chiny', 'Mohamed', 'chiny', 'afcaa233e46044704f3ac1d671b90ea4');
+INSERT INTO `users` (`id`, `date`, `login`, `pass`) VALUES
+(1, '2020-04-09 15:54:59', 'chiny', 'afcaa233e46044704f3ac1d671b90ea4');
 
 --
 -- Index pour les tables exportées
