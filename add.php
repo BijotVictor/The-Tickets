@@ -76,7 +76,6 @@ if($_POST){
     </nav>
     <main class="container">
         <div class="row">
-            <section class="col-12">
                 <?php
                     if(!empty($_SESSION['erreur'])){
                         echo '<div class="alert alert-danger" role="alert">
@@ -125,7 +124,6 @@ if($_POST){
         </div>
 
     </form>
-            </section>
         </div>
     </main>
 </body>
