@@ -24,7 +24,7 @@
             <li class="nav-item" id="NavCenter">
                 <a class="nav-link" href="cree.php" id="Home">CREER VOTRE EVENEMENT</a>
             </li>
-            <a href="signup.php"> <button id="login"> S'inscrire </button ></a>
+            <a href="inscription.php"> <button id="login"> S'inscrire </button ></a>
             <a href="login.php"><button id="login"> Se connecter </button></a>
         </ul>
     </nav>

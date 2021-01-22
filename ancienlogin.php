@@ -8,13 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" type="text/css" href="style4.css">
     <title>The Tickets</title>
 </head>
 
 <body>
-<nav class="navbar navbar-dark bg-dark position fixed-top">
+    <nav class="navbar navbar-dark bg-dark position fixed-top">
         <a class="navbar-brand " href="# ">
             <img src="logoVICTOR.png" width="115 " height="80 " alt="logo de The Tickets  ">
         </a>
@@ -25,7 +25,7 @@
             <li class="nav-item" id="NavCenter">
                 <a class="nav-link" href="cree.php" id="Home">CREER VOTRE EVENEMENT</a>
             </li>
-            <a href="inscription.php"> <button id="login"> S'inscrire </button ></a>
+            <a href="signup.php"> <button id="login"> S'inscrire </button ></a>
             <a href="login.php"><button id="login"> Se connecter </button></a>
         </ul>
     </nav>
@@ -36,7 +36,7 @@
     </div>
     <div style="text-align: center;">
         <br><br><br><br><br><br>
-        <h4 id="Left" id="black">Inscrivez vous gratuitement </h4>
+        <h4 id="Left" id="black">Connectez-vous </h4>
         <form id="black">
             <div class="form-group">
                 <label for="exampleInputEmail1">Address Mail</label>
@@ -46,7 +46,7 @@
                 <label for="exampleInputPassword1">Mot de passe</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-primary">S'inscr   ire</button>
+            <button type="submit" class="btn btn-primary">Se connecter</button>
         </form>
     </div>
 
