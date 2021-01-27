@@ -16,6 +16,13 @@ body {
     background-color: #e7e7e7;
 }
 
+p{
+    color: black;
+}
+
+.label{
+    color: black;
+}
 
 /* Credit Card */
 

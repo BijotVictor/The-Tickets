@@ -32,6 +32,8 @@
     <link rel="stylesheet" type="text/css" href="style4.css">
     <title>The Tickets</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" href="style4.css">
+
 	</head>
 	
 	<body onLoad="document.fo.login.focus()">

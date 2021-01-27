@@ -120,7 +120,7 @@ if($_POST){
             <input type="text" class="form-control" id="inputZip" name="inputZip">
         </div>
         <div class="col-12">
-            <a class="btn btn-primary" href="creationterminer.html" role="button">Créer l'évenement</a>
+            <a class="btn btn-primary" href="creationterminer.php" role="button">Créer l'évenement</a>
         </div>
 
     </form>

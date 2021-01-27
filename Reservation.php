@@ -113,7 +113,7 @@
             <input type="text" class="form-control" id="inputZip">
         </div>
         <div class="col-12">
-            <a class="btn btn-primary" href="achatterminer.html" role="button">Reserver</a>
+            <a class="btn btn-primary" href="achatterminer.php" role="button">Reserver</a>
         </div>
 
     </form>

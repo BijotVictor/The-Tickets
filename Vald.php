@@ -45,7 +45,7 @@
                         <br><br>
                         <p class="card-text">Date de l'événement : 2 février 2021 à 20h30.</p>
                         <p class="card-text"><small class="text-muted">Posté le 15/01/2021</small></p>
-                        <a class="btn btn-danger" href="Reservation.html" role="button">Reserver Maintenant !</a>
+                        <a class="btn btn-danger" href="Reservation.php" role="button">Reserver Maintenant !</a>
                     </div>
                 </div>
             </div>
